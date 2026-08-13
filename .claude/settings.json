@@ -1,13 +1,1 @@
-{
-  "hooks": [
-    {
-      "matcher": "Edit|Write",
-      "hooks": [
-        {
-          "type": "command",
-          "command": "black $CLAUDE_FILE_PATHS"
-        }
-      ]
-    }
-  ]
-}
+{}
