@@ -10,6 +10,8 @@ El objetivo es producir documentos finales claros, consistentes y listos para en
 - /informes-finales/ → entregables listos para cliente
 - /referencias/ → documentación de apoyo, glosario y criterios editoriales
 
+@referencias/glosario.md
+
 ## Convenciones
 - Todos los informes finales deben redactarse en español formal.
 - Los nombres de archivo deben seguir el formato: CLIENTE_TEMA_FECHA.
