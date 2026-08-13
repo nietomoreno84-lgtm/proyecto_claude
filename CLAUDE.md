@@ -13,6 +13,7 @@
 ## Estructura del proyecto
 - `main.py` → archivo principal donde corre el programa.
 - `requirements.txt` → lista de librerías que necesita el proyecto.
+- `/config` → archivos de configuración del proyecto.
 
 ## Cómo ejecutar el proyecto
 1. Activar el entorno virtual: `source .venv/Scripts/activate`
