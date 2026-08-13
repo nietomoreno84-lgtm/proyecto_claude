@@ -1,31 +1,31 @@
-# Proyecto Claude
+# Proyecto: Informes de Análisis de Mercado
 
-## ¿Qué es este proyecto?
--Un asistente de IA intregado con claude para optimizar los flujos de trabajo de desarrollo.
-
-## Cómo trabajar aquí
-- Usa Python como lenguaje principal.
-- Explica el código con comentarios simples cuando sea algo nuevo para mí.
-- Si hay varias formas de hacer algo, elige la más fácil de entender, no la más avanzada.
-- Antes de instalar librerías nuevas, pregúntame primero.
-- crea variables en español y sencillas.
+Este proyecto genera informes de análisis de mercado para clientes de consultoría.
+El objetivo es producir documentos finales claros, consistentes y listos para entregar en español.
 
 ## Estructura del proyecto
-- `main.py` → archivo principal donde corre el programa.
-- `requirements.txt` → lista de librerías que necesita el proyecto.
-- `/config` → archivos de configuración del proyecto.
-
-## Cómo ejecutar el proyecto
-1. Activar el entorno virtual: `source .venv/Scripts/activate`
-2. Instalar dependencias: `pip install -r requirements.txt`
-3. Ejecutar: `python main.py`
+- /datos-entrada/ → fuentes originales, hojas de cálculo y materiales de referencia
+- /plantillas/ → plantillas maestras de informe
+- /borradores/ → versiones en curso y materiales intermedios
+- /informes-finales/ → entregables listos para cliente
+- /referencias/ → documentación de apoyo, glosario y criterios editoriales
 
 ## Convenciones
-- [CODIGO] Usar camelCase para variables y funciones.
-- [GIT] Mensajes de commit claros y concisos.
-- [DOCS] Toda nueva funcion debe tenr documentacion Markdown.
+- Todos los informes finales deben redactarse en español formal.
+- Los nombres de archivo deben seguir el formato: CLIENTE_TEMA_FECHA.
+- Antes de generar un informe, confirmar siempre la versión más reciente de los datos de entrada.
+- Mantener una estructura clara: resumen ejecutivo, hallazgos, análisis y conclusiones.
+- Usar tono profesional, preciso y orientado a negocio.
 
 ## Restricciones
-- No instalar dependencias nuevas sin confirmación
-- Las credenciales van siempre en .env, nunca en el código.
-- Limite de tokens de Claude: 150k.
+- No modificar nunca los archivos originales de /datos-entrada/.
+- No sobrescribir documentos en /informes-finales/ sin confirmación explícita.
+- No cambiar las plantillas de /plantillas/ salvo instrucción directa.
+- No crear archivos fuera de las carpetas definidas sin motivo justificado.
+- Si faltan datos o hay ambigüedad, preguntar antes de continuar.
+
+## Cómo trabajar con este proyecto
+- Revisar la estructura antes de hacer cambios.
+- Identificar qué archivo es fuente, borrador o salida final.
+- Priorizar consistencia, trazabilidad y claridad.
+- Si se detectan contradicciones entre documentos, detenerse y avisar antes de actuar.
