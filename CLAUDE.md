@@ -31,3 +31,10 @@ El objetivo es producir documentos finales claros, consistentes y listos para en
 - Identificar qué archivo es fuente, borrador o salida final.
 - Priorizar consistencia, trazabilidad y claridad.
 - Si se detectan contradicciones entre documentos, detenerse y avisar antes de actuar.
+
+## Flujo de trabajo establecido
+- Siempre pide plan antes de ejecutar en tareas que afecten a /herramientas
+- Commitea con git después de cada tarea completada y verificada
+ 
+## Instrucciones que funcionan bien
+- Para generar informes: "Usa el template en @plantillas/informe_base.html"

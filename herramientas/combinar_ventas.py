@@ -23,6 +23,11 @@ def combinar_csv(carpeta_entrada: str, archivo_salida: str) -> int:
     for archivo in archivos_csv:
         with archivo.open(newline="", encoding="utf-8") as f:
             lector = csv.DictReader(f)
+            if lector.fieldnames and "mes_origen" in lector.fieldnames:
+                # Salida generada previamente por este script (p. ej. una ejecución
+                # anterior con otra ruta de salida dejó el archivo en esta carpeta).
+                # No es un CSV de origen, así que se ignora en vez de tratarlo como uno.
+                continue
             if columnas is None:
                 columnas = lector.fieldnames
             elif lector.fieldnames != columnas:
@@ -34,6 +39,12 @@ def combinar_csv(carpeta_entrada: str, archivo_salida: str) -> int:
             for fila in lector:
                 fila["mes_origen"] = mes_origen
                 filas_combinadas.append(fila)
+
+    if columnas is None:
+        raise FileNotFoundError(
+            f"No se encontraron archivos .csv de origen en: {carpeta} "
+            "(solo se hallaron salidas generadas previamente)"
+        )
 
     columnas_salida = list(columnas) + ["mes_origen"]
     ruta_salida = Path(archivo_salida)
