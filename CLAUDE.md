@@ -1,8 +1,7 @@
 # Proyecto Claude
 
 ## ¿Qué es este proyecto?
-Este es mi proyecto personal para aprender a usar Python y Claude Code.
-Soy un desarrollador junior, así que explica las cosas de forma sencilla.
+-Un asistente de IA intregado con claude para optimizar los flujos de trabajo de desarrollo.
 
 ## Cómo trabajar aquí
 - Usa Python como lenguaje principal.
@@ -21,10 +20,11 @@ Soy un desarrollador junior, así que explica las cosas de forma sencilla.
 3. Ejecutar: `python main.py`
 
 ## Convenciones
-- Nombres de archivos: snake_case siempre
-- Cada función debe tener docstring en español
-- No usar f-strings en mensajes de log, usar .format()
+- [CODIGO] Usar camelCase para variables y funciones.
+- [GIT] Mensajes de commit claros y concisos.
+- [DOCS] Toda nueva funcion debe tenr documentacion Markdown.
 
 ## Restricciones
 - No instalar dependencias nuevas sin confirmación
-- Las credenciales van siempre en .env, nunca en el código
+- Las credenciales van siempre en .env, nunca en el código.
+- Limite de tokens de Claude: 150k.
