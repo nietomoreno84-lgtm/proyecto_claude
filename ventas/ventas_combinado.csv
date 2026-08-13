@@ -1,0 +1,6 @@
+fecha,producto,cantidad,importe,mes_origen
+2026-01-05,Producto A,10,150.00,ventas_enero
+2026-01-12,Producto B,3,45.50,ventas_enero
+2026-01-20,Producto A,7,105.00,ventas_enero
+2026-02-02,Producto C,5,220.00,ventas_febrero
+2026-02-15,Producto A,4,60.00,ventas_febrero
