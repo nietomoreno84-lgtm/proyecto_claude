@@ -9,6 +9,7 @@ Soy un desarrollador junior, así que explica las cosas de forma sencilla.
 - Explica el código con comentarios simples cuando sea algo nuevo para mí.
 - Si hay varias formas de hacer algo, elige la más fácil de entender, no la más avanzada.
 - Antes de instalar librerías nuevas, pregúntame primero.
+- crea variables es español y sencillas.
 
 ## Estructura del proyecto
 - `main.py` → archivo principal donde corre el programa.
